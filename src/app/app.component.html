@@ -11,6 +11,7 @@
 </div>
 <hr style="margin: 10px 0; border-top: 1px solid red" />
 <div>
-  <h2>Find the size of a file</h2>
-  <p>Size: {{ 288883.966332 | customDecimalDigits: 2 }}</p>
+  <input type="text" id="decimalValue" [(ngModel)]="decimalValue" />
+  <h2>How many decimal has to display?</h2>
+  <p>Size: {{ 288883.966332 | customDecimalDigits: decimalValue }}</p>
 </div>
