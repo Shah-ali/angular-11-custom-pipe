@@ -1,1 +1,11 @@
-<p>Start editing to see some magic happen test :)</p>
+<div>
+  <h2>Custom Pipe Example</h2>
+  <label for="cityFilter">Filter by City:</label>
+  <input type="text" id="cityFilter" [(ngModel)]="filterCity" />
+
+  <ul>
+    <li *ngFor="let item of items | filterByCity: filterCity">
+      {{ item.name }} - {{ item.city }}
+    </li>
+  </ul>
+</div>
