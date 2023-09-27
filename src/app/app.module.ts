@@ -10,6 +10,5 @@ import { decimalDigits } from './custom-decimal-digits.pipe';
   imports: [BrowserModule, FormsModule],
   declarations: [AppComponent, FilterByCityPipe, decimalDigits],
   bootstrap: [AppComponent],
-  exports: [FilterByCityPipe, decimalDigits],
 })
 export class AppModule {}
