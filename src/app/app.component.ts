@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   filterCity: string = '';
-  decimalValue: number = 0;
+  decimalValue: number = 2;
 
   items: any[] = [
     { name: 'Item 1', city: 'New York' },
