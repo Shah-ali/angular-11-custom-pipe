@@ -4,12 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FilterByCityPipe } from './filter-by-city.pipe';
-import { FileSizePipe } from './custom-filesize.pipe';
+import { decimalDigits } from './custom-decimal-digits.pipe';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent, FilterByCityPipe, FileSizePipe],
+  declarations: [AppComponent, FilterByCityPipe, decimalDigits],
   bootstrap: [AppComponent],
-  exports: [FilterByCityPipe, FileSizePipe],
+  exports: [FilterByCityPipe, decimalDigits],
 })
 export class AppModule {}
