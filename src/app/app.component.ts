@@ -11,7 +11,6 @@ export class AppComponent {
     { name: 'Item 1', city: 'New York' },
     { name: 'Item 2', city: 'Los Angeles' },
     { name: 'Item 3', city: 'Chicago' },
-    // Add more items with city data
   ];
 
   ngOnInit() {}
